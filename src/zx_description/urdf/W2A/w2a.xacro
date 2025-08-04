@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<robot name="w2a"
+	xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	<xacro:include filename="$(find zx_description)/urdf/W2A/w2a.urdf" />
+
+	<xacro:include filename="$(find zx_description)/urdf/W2A/rplidar.xacro" />
+	<xacro:include filename="$(find zx_description)/urdf/W2A/differential_drive_controller.xacro" />
+	<xacro:include filename="$(find zx_description)/urdf/W2A/arm_controller.xacro" />
+
+	<xacro:rplidar prefix="laser"/>
+	<xacro:differential_drive_controller/>
+	<xacro:transmission_block joint_name="joint_1"/>
+	<xacro:transmission_block joint_name="joint_2"/>
+	<xacro:transmission_block joint_name="joint_3"/>
+	<xacro:transmission_block joint_name="joint_4"/>
+	<xacro:transmission_block joint_name="joint_5"/>
+	<xacro:transmission_block joint_name="claw_joint_1"/>
+	<xacro:transmission_block joint_name="claw_joint_2"/>
+
+</robot>
