@@ -4,7 +4,7 @@
   <xacro:property name="sonar_radius" value="0.001" />
   <xacro:property name="sonar_height" value="0.001" />
 
-  <xacro:macro name="add_sonar" params="pos xyz rpy">
+  <xacro:macro name="sonar" params="pos xyz rpy">
     <link name="${pos}_sonar">
       <visual>
         <origin xyz="0 0 0" rpy="0 1.57 0" />
