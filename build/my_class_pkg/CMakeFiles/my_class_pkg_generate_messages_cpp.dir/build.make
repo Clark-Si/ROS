@@ -73,6 +73,7 @@ my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp: /home/bcsh/sdp_class
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+<<<<<<< HEAD
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg
@@ -80,6 +81,15 @@ my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp: /home/bcsh/sdp_class
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+=======
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionAction.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bcsh/sdp_class_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from my_class_pkg/MyActionAction.msg"
@@ -96,8 +106,13 @@ my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp: /home/bcsh/sdp_class
 
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg
+<<<<<<< HEAD
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+=======
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionResult.h: /opt/ros/noetic/share/gencpp/msg.h.template
@@ -108,8 +123,13 @@ my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp: /home/bcsh/sdp_class
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+<<<<<<< HEAD
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+=======
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 /home/bcsh/sdp_class_ws/devel/include/my_class_pkg/MyActionActionFeedback.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bcsh/sdp_class_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from my_class_pkg/MyActionActionFeedback.msg"
 	cd /home/bcsh/sdp_class_ws/src/my_class_pkg && /home/bcsh/sdp_class_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg -Imy_class_pkg:/home/bcsh/sdp_class_ws/src/my_class_pkg/msg -Imy_class_pkg:/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p my_class_pkg -o /home/bcsh/sdp_class_ws/devel/include/my_class_pkg -e /opt/ros/noetic/share/gencpp/cmake/..

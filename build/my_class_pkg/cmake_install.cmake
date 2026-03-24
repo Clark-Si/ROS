@@ -38,6 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/my_class_pkg" TYPE FILE FILES "/home/bcsh/sdp_class_ws/devel/include/my_class_pkg/TutorialsConfig.h")
 endif()
 
@@ -54,6 +55,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_class_pkg/msg" TYPE FILE FILES "/home/bcsh/sdp_class_ws/src/my_class_pkg/msg/MyMessage.msg")
 endif()
 

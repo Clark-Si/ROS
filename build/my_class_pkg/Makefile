@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /home/bcsh/sdp_class_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+<<<<<<< HEAD
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -79,6 +80,19 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+=======
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -90,6 +104,7 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+<<<<<<< HEAD
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -101,6 +116,8 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -123,6 +140,7 @@ test/fast: test
 
 .PHONY : test/fast
 
+<<<<<<< HEAD
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -134,6 +152,42 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+=======
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +222,7 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/ros_dynamic_speed_node.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_dynamic_speed_node.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/ros_dynamic_speed_node.dir/rule
@@ -256,6 +311,21 @@ dynamic_reconfigure_generate_messages_lisp: my_class_pkg/CMakeFiles/dynamic_reco
 dynamic_reconfigure_generate_messages_lisp/fast:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make my_class_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+=======
+my_class_pkg/CMakeFiles/ros_server_node.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_server_node.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/ros_server_node.dir/rule
+
+# Convenience name for target.
+ros_server_node: my_class_pkg/CMakeFiles/ros_server_node.dir/rule
+
+.PHONY : ros_server_node
+
+# fast build rule for target.
+ros_server_node/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_server_node.dir/build.make my_class_pkg/CMakeFiles/ros_server_node.dir/build
+.PHONY : ros_server_node/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # Convenience name for target.
 my_class_pkg/CMakeFiles/ros_publisher_node.dir/rule:
@@ -273,6 +343,7 @@ ros_publisher_node/fast:
 .PHONY : ros_publisher_node/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/ros_server_node.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_server_node.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/ros_server_node.dir/rule
@@ -391,6 +462,126 @@ dynamic_reconfigure_generate_messages_eus: my_class_pkg/CMakeFiles/dynamic_recon
 dynamic_reconfigure_generate_messages_eus/fast:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make my_class_pkg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
+=======
+my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule
+
+# Convenience name for target.
+my_class_pkg_generate_messages_py: my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule
+
+.PHONY : my_class_pkg_generate_messages_py
+
+# fast build rule for target.
+my_class_pkg_generate_messages_py/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/build
+.PHONY : my_class_pkg_generate_messages_py/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule
+
+# Convenience name for target.
+my_class_pkg_gennodejs: my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule
+
+.PHONY : my_class_pkg_gennodejs
+
+# fast build rule for target.
+my_class_pkg_gennodejs/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/build
+.PHONY : my_class_pkg_gennodejs/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+my_class_pkg_generate_messages_nodejs: my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/rule
+
+.PHONY : my_class_pkg_generate_messages_nodejs
+
+# fast build rule for target.
+my_class_pkg_generate_messages_nodejs/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/build
+.PHONY : my_class_pkg_generate_messages_nodejs/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/ros_client_node.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_client_node.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/ros_client_node.dir/rule
+
+# Convenience name for target.
+ros_client_node: my_class_pkg/CMakeFiles/ros_client_node.dir/rule
+
+.PHONY : ros_client_node
+
+# fast build rule for target.
+ros_client_node/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_client_node.dir/build.make my_class_pkg/CMakeFiles/ros_client_node.dir/build
+.PHONY : ros_client_node/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_genlisp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_genlisp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_genlisp.dir/rule
+
+# Convenience name for target.
+my_class_pkg_genlisp: my_class_pkg/CMakeFiles/my_class_pkg_genlisp.dir/rule
+
+.PHONY : my_class_pkg_genlisp
+
+# fast build rule for target.
+my_class_pkg_genlisp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_genlisp.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_genlisp.dir/build
+.PHONY : my_class_pkg_genlisp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_lisp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_lisp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+my_class_pkg_generate_messages_lisp: my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_lisp.dir/rule
+
+.PHONY : my_class_pkg_generate_messages_lisp
+
+# fast build rule for target.
+my_class_pkg_generate_messages_lisp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_lisp.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_lisp.dir/build
+.PHONY : my_class_pkg_generate_messages_lisp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_gencpp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_gencpp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_gencpp.dir/rule
+
+# Convenience name for target.
+my_class_pkg_gencpp: my_class_pkg/CMakeFiles/my_class_pkg_gencpp.dir/rule
+
+.PHONY : my_class_pkg_gencpp
+
+# fast build rule for target.
+my_class_pkg_gencpp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_gencpp.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_gencpp.dir/build
+.PHONY : my_class_pkg_gencpp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+my_class_pkg_generate_messages_cpp: my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp.dir/rule
+
+.PHONY : my_class_pkg_generate_messages_cpp
+
+# fast build rule for target.
+my_class_pkg_generate_messages_cpp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_cpp.dir/build
+.PHONY : my_class_pkg_generate_messages_cpp/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # Convenience name for target.
 my_class_pkg/CMakeFiles/ros_action_client.dir/rule:
@@ -408,6 +599,7 @@ ros_action_client/fast:
 .PHONY : ros_action_client/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -571,6 +763,126 @@ std_msgs_generate_messages_eus: my_class_pkg/CMakeFiles/std_msgs_generate_messag
 std_msgs_generate_messages_eus/fast:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
+=======
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyServiceMsg.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyServiceMsg.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyServiceMsg.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyServiceMsg: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyServiceMsg.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyServiceMsg
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyServiceMsg/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyServiceMsg.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyServiceMsg.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyServiceMsg/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionActionFeedback
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionFeedback.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionActionFeedback/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/ros_action_server.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_action_server.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/ros_action_server.dir/rule
+
+# Convenience name for target.
+ros_action_server: my_class_pkg/CMakeFiles/ros_action_server.dir/rule
+
+.PHONY : ros_action_server
+
+# fast build rule for target.
+ros_action_server/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_action_server.dir/build.make my_class_pkg/CMakeFiles/ros_action_server.dir/build
+.PHONY : ros_action_server/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/ros_subscriber_node.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_subscriber_node.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/ros_subscriber_node.dir/rule
+
+# Convenience name for target.
+ros_subscriber_node: my_class_pkg/CMakeFiles/ros_subscriber_node.dir/rule
+
+.PHONY : ros_subscriber_node
+
+# fast build rule for target.
+ros_subscriber_node/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_subscriber_node.dir/build.make my_class_pkg/CMakeFiles/ros_subscriber_node.dir/build
+.PHONY : ros_subscriber_node/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionGoal.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionGoal.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionGoal.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionGoal: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionGoal.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionGoal
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionGoal/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionGoal.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionGoal.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionGoal/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # Convenience name for target.
 my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
@@ -588,6 +900,99 @@ actionlib_msgs_generate_messages_nodejs/fast:
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
+=======
+my_class_pkg/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: my_class_pkg/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_generate_messages_py.dir/build.make my_class_pkg/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: my_class_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make my_class_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: my_class_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make my_class_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make my_class_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: my_class_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_class_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 my_class_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -603,6 +1008,7 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/ros_param.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/ros_param.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/ros_param.dir/rule
@@ -616,6 +1022,186 @@ ros_param: my_class_pkg/CMakeFiles/ros_param.dir/rule
 ros_param/fast:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_param.dir/build.make my_class_pkg/CMakeFiles/ros_param.dir/build
 .PHONY : ros_param/fast
+=======
+my_class_pkg/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: my_class_pkg/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make my_class_pkg/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: my_class_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_class_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: my_class_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/build.make my_class_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make my_class_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: my_class_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make my_class_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_geneus.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_geneus.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_geneus.dir/rule
+
+# Convenience name for target.
+my_class_pkg_geneus: my_class_pkg/CMakeFiles/my_class_pkg_geneus.dir/rule
+
+.PHONY : my_class_pkg_geneus
+
+# fast build rule for target.
+my_class_pkg_geneus/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_geneus.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_geneus.dir/build
+.PHONY : my_class_pkg_geneus/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: my_class_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build.make my_class_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionResult.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionResult.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionResult.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionActionResult: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionResult.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionActionResult
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionActionResult/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionResult.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionResult.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionActionResult/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: my_class_pkg/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_generate_messages_eus.dir/build.make my_class_pkg/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionResult.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionResult.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionResult.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionResult: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionResult.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionResult
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionResult/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionResult.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionResult.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionResult/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_generate_messages.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages.dir/rule
+
+# Convenience name for target.
+my_class_pkg_generate_messages: my_class_pkg/CMakeFiles/my_class_pkg_generate_messages.dir/rule
+
+.PHONY : my_class_pkg_generate_messages
+
+# fast build rule for target.
+my_class_pkg_generate_messages/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_generate_messages.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_generate_messages.dir/build
+.PHONY : my_class_pkg_generate_messages/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # Convenience name for target.
 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
@@ -648,6 +1234,7 @@ _my_class_pkg_generate_messages_check_deps_MyMessage/fast:
 .PHONY : _my_class_pkg_generate_messages_check_deps_MyMessage/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
@@ -708,6 +1295,8 @@ dynamic_reconfigure_generate_messages_cpp/fast:
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_eus.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_eus.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_eus.dir/rule
@@ -723,6 +1312,7 @@ my_class_pkg_generate_messages_eus/fast:
 .PHONY : my_class_pkg_generate_messages_eus/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_py.dir/rule
@@ -1051,6 +1641,51 @@ my_class_pkg_generate_messages_nodejs: my_class_pkg/CMakeFiles/my_class_pkg_gene
 my_class_pkg_generate_messages_nodejs/fast:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_generate_messages_nodejs.dir/build
 .PHONY : my_class_pkg_generate_messages_nodejs/fast
+=======
+my_class_pkg/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: my_class_pkg/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make my_class_pkg/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make my_class_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 # Convenience name for target.
 my_class_pkg/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
@@ -1068,6 +1703,7 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule
 .PHONY : my_class_pkg/CMakeFiles/my_class_pkg_gennodejs.dir/rule
@@ -1108,6 +1744,81 @@ src/dynamic_reconfigure.s: src/dynamic_reconfigure.cpp.s
 src/dynamic_reconfigure.cpp.s:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/dynamic_reconfigure_node.dir/build.make my_class_pkg/CMakeFiles/dynamic_reconfigure_node.dir/src/dynamic_reconfigure.cpp.s
 .PHONY : src/dynamic_reconfigure.cpp.s
+=======
+my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make my_class_pkg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/my_class_pkg_genpy.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/my_class_pkg_genpy.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/my_class_pkg_genpy.dir/rule
+
+# Convenience name for target.
+my_class_pkg_genpy: my_class_pkg/CMakeFiles/my_class_pkg_genpy.dir/rule
+
+.PHONY : my_class_pkg_genpy
+
+# fast build rule for target.
+my_class_pkg_genpy/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/my_class_pkg_genpy.dir/build.make my_class_pkg/CMakeFiles/my_class_pkg_genpy.dir/build
+.PHONY : my_class_pkg_genpy/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionAction.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionAction.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionAction.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionAction: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionAction.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionAction
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionAction/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionAction.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionAction.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionAction/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionFeedback.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionFeedback.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionFeedback.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionFeedback: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionFeedback.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionFeedback
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionFeedback/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionFeedback.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionFeedback.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionFeedback/fast
+
+# Convenience name for target.
+my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionGoal.dir/rule:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionGoal.dir/rule
+.PHONY : my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionGoal.dir/rule
+
+# Convenience name for target.
+_my_class_pkg_generate_messages_check_deps_MyActionActionGoal: my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionGoal.dir/rule
+
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionActionGoal
+
+# fast build rule for target.
+_my_class_pkg_generate_messages_check_deps_MyActionActionGoal/fast:
+	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionGoal.dir/build.make my_class_pkg/CMakeFiles/_my_class_pkg_generate_messages_check_deps_MyActionActionGoal.dir/build
+.PHONY : _my_class_pkg_generate_messages_check_deps_MyActionActionGoal/fast
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 src/ros_action_client.o: src/ros_action_client.cpp.o
 
@@ -1190,6 +1901,7 @@ src/ros_client.cpp.s:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_client_node.dir/build.make my_class_pkg/CMakeFiles/ros_client_node.dir/src/ros_client.cpp.s
 .PHONY : src/ros_client.cpp.s
 
+<<<<<<< HEAD
 src/ros_dynamic_speed.o: src/ros_dynamic_speed.cpp.o
 
 .PHONY : src/ros_dynamic_speed.o
@@ -1244,6 +1956,8 @@ src/ros_param.cpp.s:
 	cd /home/bcsh/sdp_class_ws/build && $(MAKE) -f my_class_pkg/CMakeFiles/ros_param.dir/build.make my_class_pkg/CMakeFiles/ros_param.dir/src/ros_param.cpp.s
 .PHONY : src/ros_param.cpp.s
 
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 src/ros_publisher.o: src/ros_publisher.cpp.o
 
 .PHONY : src/ros_publisher.o
@@ -1331,6 +2045,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+<<<<<<< HEAD
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
@@ -1402,6 +2117,66 @@ help:
 	@echo "... src/dynamic_reconfigure.o"
 	@echo "... src/dynamic_reconfigure.i"
 	@echo "... src/dynamic_reconfigure.s"
+=======
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... ros_server_node"
+	@echo "... ros_publisher_node"
+	@echo "... edit_cache"
+	@echo "... my_class_pkg_generate_messages_py"
+	@echo "... my_class_pkg_gennodejs"
+	@echo "... my_class_pkg_generate_messages_nodejs"
+	@echo "... ros_client_node"
+	@echo "... my_class_pkg_genlisp"
+	@echo "... my_class_pkg_generate_messages_lisp"
+	@echo "... my_class_pkg_gencpp"
+	@echo "... my_class_pkg_generate_messages_cpp"
+	@echo "... ros_action_client"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyServiceMsg"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionActionFeedback"
+	@echo "... ros_action_server"
+	@echo "... ros_subscriber_node"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionGoal"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... test"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... my_class_pkg_geneus"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionActionResult"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... install"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionResult"
+	@echo "... my_class_pkg_generate_messages"
+	@echo "... install/local"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyMessage"
+	@echo "... my_class_pkg_generate_messages_eus"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... my_class_pkg_genpy"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionAction"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionFeedback"
+	@echo "... _my_class_pkg_generate_messages_check_deps_MyActionActionGoal"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 	@echo "... src/ros_action_client.o"
 	@echo "... src/ros_action_client.i"
 	@echo "... src/ros_action_client.s"
@@ -1411,12 +2186,15 @@ help:
 	@echo "... src/ros_client.o"
 	@echo "... src/ros_client.i"
 	@echo "... src/ros_client.s"
+<<<<<<< HEAD
 	@echo "... src/ros_dynamic_speed.o"
 	@echo "... src/ros_dynamic_speed.i"
 	@echo "... src/ros_dynamic_speed.s"
 	@echo "... src/ros_param.o"
 	@echo "... src/ros_param.i"
 	@echo "... src/ros_param.s"
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 	@echo "... src/ros_publisher.o"
 	@echo "... src/ros_publisher.i"
 	@echo "... src/ros_publisher.s"

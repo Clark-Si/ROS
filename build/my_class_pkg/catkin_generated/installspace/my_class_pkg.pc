@@ -4,5 +4,10 @@ Name: my_class_pkg
 Description: Description of my_class_pkg
 Version: 0.0.0
 Cflags: -I${prefix}/include
+<<<<<<< HEAD
 Libs: -L${prefix}/lib -lmy_class_pkg
 Requires: roscpp rospy std_msgs message_runtime actionlib actionlib_msgs dynamic_reconfigure
+=======
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime actionlib actionlib_msgs
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da

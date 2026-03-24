@@ -268,7 +268,11 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
+<<<<<<< HEAD
             CMAKE_PREFIX_PATH = r'/home/bcsh/sensor_ws/devel;/home/bcsh/sdp_class_ws/devel;/home/bcsh/upros_class_code/devel;/opt/ros/noetic'.split(';')
+=======
+            CMAKE_PREFIX_PATH = r'/home/bcsh/sdp_class_ws/devel;/home/bcsh/upros_class_code/devel;/opt/ros/noetic'.split(';')
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

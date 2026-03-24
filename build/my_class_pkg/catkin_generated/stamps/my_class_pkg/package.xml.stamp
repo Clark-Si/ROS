@@ -58,14 +58,20 @@
   <build_depend>message_generation</build_depend>
   <build_depend>actionlib</build_depend>
   <build_depend>actionlib_msgs</build_depend>
+<<<<<<< HEAD
     <build_depend>dynamic_reconfigure</build_depend>
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>message_runtime</exec_depend>
   <exec_depend>actionlib</exec_depend>
   <exec_depend>actionlib_msgs</exec_depend>
+<<<<<<< HEAD
    <exec_depend>dynamic_reconfigure</exec_depend> 
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 
 
   <!-- The export tag contains other, unspecified, tags -->

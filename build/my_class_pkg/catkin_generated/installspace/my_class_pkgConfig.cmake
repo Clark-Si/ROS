@@ -116,7 +116,11 @@ if(NOT "include " STREQUAL " ")
   endforeach()
 endif()
 
+<<<<<<< HEAD
 set(libraries "my_class_pkg")
+=======
+set(libraries "")
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -154,7 +158,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD
     foreach(path /home/bcsh/sdp_class_ws/install/lib;/home/bcsh/sensor_ws/devel/lib;/home/bcsh/sdp_class_ws/devel/lib;/home/bcsh/upros_class_code/devel/lib;/opt/ros/noetic/lib)
+=======
+    foreach(path /home/bcsh/sdp_class_ws/install/lib;/home/bcsh/sdp_class_ws/devel/lib;/home/bcsh/upros_class_code/devel/lib;/opt/ros/noetic/lib)
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +185,11 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
+<<<<<<< HEAD
 set(my_class_pkg_EXPORTED_TARGETS "my_class_pkg_gencfg;my_class_pkg_generate_messages_cpp;my_class_pkg_generate_messages_eus;my_class_pkg_generate_messages_lisp;my_class_pkg_generate_messages_nodejs;my_class_pkg_generate_messages_py")
+=======
+set(my_class_pkg_EXPORTED_TARGETS "my_class_pkg_generate_messages_cpp;my_class_pkg_generate_messages_eus;my_class_pkg_generate_messages_lisp;my_class_pkg_generate_messages_nodejs;my_class_pkg_generate_messages_py")
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${my_class_pkg_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +197,11 @@ foreach(t ${my_class_pkg_EXPORTED_TARGETS})
   endif()
 endforeach()
 
+<<<<<<< HEAD
 set(depends "roscpp;rospy;std_msgs;message_runtime;actionlib;actionlib_msgs;dynamic_reconfigure")
+=======
+set(depends "roscpp;rospy;std_msgs;message_runtime;actionlib;actionlib_msgs")
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

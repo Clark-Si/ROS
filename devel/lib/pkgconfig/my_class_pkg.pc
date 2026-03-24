@@ -3,6 +3,12 @@ prefix=/home/bcsh/sdp_class_ws/devel
 Name: my_class_pkg
 Description: Description of my_class_pkg
 Version: 0.0.0
+<<<<<<< HEAD
 Cflags: -I/home/bcsh/sdp_class_ws/devel/include -I/home/bcsh/sdp_class_ws/src/my_class_pkg/include
 Libs: -L${prefix}/lib -lmy_class_pkg
 Requires: roscpp rospy std_msgs message_runtime actionlib actionlib_msgs dynamic_reconfigure
+=======
+Cflags: -I/home/bcsh/sdp_class_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime actionlib actionlib_msgs
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da

@@ -24,7 +24,11 @@ add_custom_target(_my_class_pkg_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg" NAME_WE)
 add_custom_target(_my_class_pkg_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "my_class_pkg" "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg" "actionlib_msgs/GoalID:my_class_pkg/MyActionResult:std_msgs/Header:my_class_pkg/MyActionActionGoal:my_class_pkg/MyActionFeedback:my_class_pkg/MyActionGoal:my_class_pkg/MyActionActionFeedback:actionlib_msgs/GoalStatus:my_class_pkg/MyActionActionResult"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "my_class_pkg" "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg" "actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus:my_class_pkg/MyActionGoal:my_class_pkg/MyActionResult:my_class_pkg/MyActionFeedback:my_class_pkg/MyActionActionFeedback:my_class_pkg/MyActionActionGoal:my_class_pkg/MyActionActionResult"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 )
 
 get_filename_component(_filename "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg" NAME_WE)
@@ -34,12 +38,20 @@ add_custom_target(_my_class_pkg_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg" NAME_WE)
 add_custom_target(_my_class_pkg_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "my_class_pkg" "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg" "my_class_pkg/MyActionResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "my_class_pkg" "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg" "actionlib_msgs/GoalID:my_class_pkg/MyActionResult:std_msgs/Header:actionlib_msgs/GoalStatus"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 )
 
 get_filename_component(_filename "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg" NAME_WE)
 add_custom_target(_my_class_pkg_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "my_class_pkg" "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:my_class_pkg/MyActionFeedback:actionlib_msgs/GoalStatus"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "my_class_pkg" "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus:my_class_pkg/MyActionFeedback"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 )
 
 get_filename_component(_filename "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg" NAME_WE)
@@ -77,7 +89,11 @@ _generate_msg_cpp(my_class_pkg
 _generate_msg_cpp(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_cpp(my_class_pkg
@@ -89,13 +105,21 @@ _generate_msg_cpp(my_class_pkg
 _generate_msg_cpp(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_cpp(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_cpp(my_class_pkg
@@ -174,7 +198,11 @@ _generate_msg_eus(my_class_pkg
 _generate_msg_eus(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_eus(my_class_pkg
@@ -186,13 +214,21 @@ _generate_msg_eus(my_class_pkg
 _generate_msg_eus(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_eus(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_eus(my_class_pkg
@@ -271,7 +307,11 @@ _generate_msg_lisp(my_class_pkg
 _generate_msg_lisp(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_lisp(my_class_pkg
@@ -283,13 +323,21 @@ _generate_msg_lisp(my_class_pkg
 _generate_msg_lisp(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_lisp(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_lisp(my_class_pkg
@@ -368,7 +416,11 @@ _generate_msg_nodejs(my_class_pkg
 _generate_msg_nodejs(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_nodejs(my_class_pkg
@@ -380,13 +432,21 @@ _generate_msg_nodejs(my_class_pkg
 _generate_msg_nodejs(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_nodejs(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_nodejs(my_class_pkg
@@ -465,7 +525,11 @@ _generate_msg_py(my_class_pkg
 _generate_msg_py(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionGoal.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_py(my_class_pkg
@@ -477,13 +541,21 @@ _generate_msg_py(my_class_pkg
 _generate_msg_py(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_py(my_class_pkg
   "/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/bcsh/sdp_class_ws/devel/share/my_class_pkg/msg/MyActionFeedback.msg"
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/my_class_pkg
 )
 _generate_msg_py(my_class_pkg

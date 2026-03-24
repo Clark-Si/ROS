@@ -90,7 +90,10 @@ ros_client_node_EXTERNAL_OBJECTS =
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+<<<<<<< HEAD
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+=======
+>>>>>>> b43b30610ffe60de948a4cca2741cb41879156da
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /opt/ros/noetic/lib/librostime.so
 /home/bcsh/sdp_class_ws/devel/lib/my_class_pkg/ros_client_node: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
