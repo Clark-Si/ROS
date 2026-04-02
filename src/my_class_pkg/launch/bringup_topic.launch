@@ -1,0 +1,6 @@
+<launch>
+<!-- 启动 ros_publisher 节点 -->
+<node name="ros_publisher_node" pkg="my_class_pkg" type="ros_publisher_node" output="screen" />
+<!-- 启动 ros_subscriber 节点 -->
+<node name="ros_subscriber_node" pkg="my_class_pkg" type="ros_subscriber_node" output="screen" />
+</launch>
