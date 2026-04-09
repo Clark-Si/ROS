@@ -1,0 +1,2 @@
+my_class_pkg
+-DCATKIN_DEVEL_PREFIX=/home/bcsh/sdp_class_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bcsh/sdp_class_ws/install -G Unix Makefiles
